@@ -1,0 +1,103 @@
+@import './assets/partials/colors';
+@import './assets/partials/animations';
+@import './assets/partials/fonts';
+@import './assets/partials/spacing';
+@import './assets/partials/buttons';
+@import './assets/partials/mixins';
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+
+header {
+    background-color: $primary-color;
+    padding: 2rem;
+
+.logo {
+        height: 4rem;
+        width: 4rem;
+        margin-left: 5px;
+}
+    
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+        display: flex;
+        list-style: none;
+}
+li {
+        margin-right: 25px;
+}
+a {
+    text-decoration: none;
+        color: $secondary-color;
+        font-weight: bold;
+         }
+}
+
+
+
+.headline {
+    background-color: $secondary-color; 
+    color: $dark-theme; 
+    padding: 3rem;
+    text-align: center;
+
+    .testo-headline {
+        font-size: $font-size1; 
+        line-height: 30px;
+    }
+
+    .b-headline {
+        @include button-headline($primary-color, $tertiary-color);
+    }
+}
+      
+.hero {
+ background-color: white;
+ display: flex;
+margin: $size0;
+
+ .img-hero {
+    height: $size5;
+    width: $size5;
+    object-fit: cover;
+    margin-right: $size0;
+ }
+
+ .titolo-hero {
+    color: $tertiary-color;
+    font-weight: 900;
+    font-size: $font-size2;
+    margin-bottom: $size0;
+ }
+
+ .p-hero {
+    color: $tertiary-color;
+    font-size: $font-size0;
+    width: 70%;
+
+        
+ }
+ 
+}
+
+
+
+        
+
+
+
+
+
+
+

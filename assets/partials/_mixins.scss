@@ -1,0 +1,16 @@
+@mixin button-headline($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: $btn-padding; 
+    border: none;
+    border-radius: $btn-border-radius; 
+    cursor: pointer;
+    margin-inline: 20px;
+    text-align: center;
+    font-size: 1rem; 
+    margin-top: 40px;
+
+    &:hover {
+        background-color: darken($bg-color, 10%);
+    }
+}
